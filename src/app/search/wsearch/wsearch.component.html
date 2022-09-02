@@ -1,0 +1,7 @@
+<div class="container">
+  <app-search-bar 
+  (submitted)="onUserInput($event)"
+  (inputLength)="checkUserInput($event)"></app-search-bar>
+
+  <app-page-list *ngIf="pages.length" [pages]="pages" [inputLength] ="inputLength"></app-page-list>
+</div>
